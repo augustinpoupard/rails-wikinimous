@@ -1,0 +1,9 @@
+<h1>Les articles</h1> <%= link_to "ajout", new_article_path %> <br><br>
+
+
+<% @articles.each do |task| %>
+
+<%= link_to article.title, article_path(article) %>
+<p><%= article.description %></p>
+
+<% end %>
